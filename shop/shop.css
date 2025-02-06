@@ -1,0 +1,103 @@
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+} 
+
+body { 
+    font-family: 'Arial', sans-serif; background-color: #f4f4f4; color: #333; 
+}
+
+header { 
+    background-color: lightgray; color: white; padding: 20px; border-radius: 0 0 20px 20px; display: flex; justify-content: space-between; align-items: center; 
+}
+
+header .logo h1 { 
+    font-size: 2em; 
+}
+
+header nav ul { 
+    list-style: none; display: flex; 
+}
+
+header nav ul li { 
+    margin-left: 20px; 
+}
+
+header nav ul li a {
+    color: white; text-decoration: none; font-size: 1.2em; 
+}
+
+header nav ul li a:hover { 
+    text-decoration: underline; 
+}
+
+.hero { 
+    background-color: lightgray; color: white; text-align: center; padding: 80px 20px; border-radius: 0 0 30px 30px; margin-top: 20px; 
+}
+
+.hero h2 { 
+    font-size: 2.5em; 
+}
+
+.hero p { 
+    font-size: 1.2em; margin: 20px 0; 
+}
+
+.cta-button { 
+    background-color: #ff9900; color: white; padding: 15px 30px; border: none; border-radius: 30px; font-size: 1.2em; cursor: pointer; transition: background-color 0.3s ease; 
+}
+
+.cta-button:hover { 
+    background-color: #e68900; 
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Produktbereich */ 
+.product-section { 
+    display: flex; justify-content: center; gap: 30px; padding: 40px 20px; flex-wrap: wrap; 
+}
+
+.product-card { 
+    background-color: white; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 300px; text-align: center; padding: 20px; transition: transform 0.3s ease; 
+}
+
+.product-card:hover { 
+    transform: translateY(-10px); 
+}
+
+.product-image { 
+    max-width: 100%; border-radius: 10px; margin-bottom: 15px; 
+}
+
+.product-title { 
+    font-size: 1.5em; margin-bottom: 10px; 
+}
+
+.product-description { 
+    font-size: 1.1em; color: #777; margin-bottom: 15px; 
+}
+
+footer { 
+    background-color: #333; color: white; text-align: center; padding: 20px; border-radius: 20px; margin-top: 40px; 
+}
+
+footer .footer-content p { 
+    margin-bottom: 10px; 
+}
+
+footer .footer-content a { 
+    color: #ff9900; text-decoration: none; 
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline; 
+}
+
+/* Responsives Design */ 
+@media (max-width: 768px) {
+    .product-section { flex-direction: column; align-items: center; } .cta-button { font-size: 1em; padding: 12px 25px; }
+}
